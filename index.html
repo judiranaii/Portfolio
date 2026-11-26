@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Judicaël Ranaivoson — Portfolio | Software Engineering Student</title>
+  <meta name="description" content="Portfolio of Judicaël Ranaivoson, Bachelor 2 Computer Science (software engineering) student in Antananarivo. Java, C#, C, PHP, HTML/CSS, graphic design and UI/UX.">
+  <meta name="theme-color" content="#050C1C">
+  <meta property="og:title" content="Judicaël Ranaivoson — Portfolio">
+  <meta property="og:description" content="Software engineering student. Development, graphic design and UI/UX.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236D4AFF'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' text-anchor='middle' fill='white'%3EJR%3C/text%3E%3C/svg%3E">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = window.matchMedia && matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) { document.documentElement.setAttribute("data-theme", "dark"); }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#accueil" data-i18n="skip">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 21h16"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 9v6"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="i-pizza" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22 3 6a17 17 0 0 1 18 0z"/><circle cx="10" cy="10" r="1"/><circle cx="14" cy="12" r="1"/><circle cx="12" cy="16" r="1"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 9-8 9 8v10H3z"/><path d="M9 21v-6h6v6"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19 7-7-4-4-7 7-1 5z"/><path d="m15 8 1-3 3 3-3 1M2 22l5-3"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 10h18M16 15h2M6 6l10-3v3"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l3 12h10l3-8H6"/></symbol>
+    <symbol id="i-sofa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v3"/><path d="M3 13a2 2 0 0 1 4 0v2h10v-2a2 2 0 0 1 4 0v5H3z"/><path d="M6 18v2M18 18v2"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.800v1.600h.1c.5-1 1.800-1.900 3.700-1.900 4 0 4.700 2.600 4.700 6V21h-4v-5c0-1.200 0-2.800-1.700-2.800s-2 1.300-2 2.700V21h-4z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r=".8" fill="currentColor"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="currentColor"><path d="M17.800 3h3.100l-6.800 7.700L22 21h-6.200l-4.900-6.300L5.300 21H2.200l7.300-8.300L2 3h6.300l4.400 5.800zm-1.100 16.200h1.700L7.400 4.700H5.600z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 15 7-7 7 7"/></symbol>
+    <symbol id="i-figma" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h4a3 3 0 0 1 0 6H8zM12 3h4a3 3 0 0 1 0 6h-4zM8 9h4v6H8a3 3 0 0 1 0-6zM12 9h1a3 3 0 1 1 0 6h-1zM8 15h4v3a3 3 0 1 1-4-3z"/></symbol>
+    <symbol id="i-translate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+  </defs>
+</svg>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <div class="nav-left">
+      <button class="icon-btn lang-btn" id="langBtn" type="button" aria-label="Change language / Changer de langue">
+        <svg><use href="#i-translate"/></svg><span class="on" data-l="en">EN</span><span data-l="fr">FR</span>
+      </button>
+      <a href="#accueil" class="logo" aria-label="Home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+        <span class="logo-text">Judi<span style="color:var(--hover)">.dev</span></span>
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#accueil" class="active" data-i18n="nav.home">Home</a></li>
+        <li><a href="#apropos" data-i18n="nav.about">About</a></li>
+        <li><a href="#competences" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#projets" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#formation" data-i18n="nav.edu">Education</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button class="icon-btn theme-btn" id="themeBtn" type="button" aria-label="Toggle light / dark mode">
+        <svg class="sun"><use href="#i-sun"/></svg><svg class="moon"><use href="#i-moon"/></svg>
+      </button>
+      <a class="btn btn-primary nav-cta" id="hireMe" href="mailto:judiranaivoson@gmail.com">
+        <span data-i18n="hire">Hire Me</span> <svg><use href="#i-arrow"/></svg>
+      </a>
+      <button class="icon-btn burger" id="burger" type="button" aria-label="Menu" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow" data-i18n="hero.badge">Software engineering student</span>
+      <h1 style="margin-top:20px"><span data-i18n="hero.hi">Hi, I'm</span> <span class="accent">Judicaël</span></h1>
+      <h2 data-i18n="hero.tag">I design and build digital solutions.</h2>
+      <p class="lead" data-i18n="hero.lead"></p>
+      <div class="avail"><i></i><span data-i18n="hero.avail">Open to internships &amp; collaborations</span></div>
+      <div class="hero-actions">
+        <a href="#projets" class="btn btn-primary"><span data-i18n="hero.cta1">View my work</span> <svg><use href="#i-arrow"/></svg></a>
+        <a href="assets/CV-Judicael-Ranaivoson.pdf" download="CV-Judicael-Ranaivoson.pdf" class="btn btn-outline"><span data-i18n="hero.cta2">Download CV</span> <svg><use href="#i-download"/></svg></a>
+      </div>
+      <p class="tech-label" data-i18n="hero.tech">Technologies I work with</p>
+      <div class="tech-row">
+        <span class="tech" title="Java">Java</span><span class="tech" title="C#">C#</span><span class="tech" title="C">C</span>
+        <span class="tech" title="HTML &amp; CSS">HTML/CSS</span><span class="tech" title="PHP">PHP</span>
+        <span class="tech" title="Adobe Illustrator">Ai</span><span class="tech" title="Figma">Figma</span>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="orb-ring"></div><div class="orb"></div>
+      <div class="code-card">
+        <div class="code-head"><i></i><i></i><i></i><span>profile.js</span></div>
+<pre><span class="k">const</span> <span class="p">developer</span> = {
+  name: <span class="s">"Judicaël"</span>,
+  study: <span class="s">"Bachelor 2 — Software Eng."</span>,
+  skills: [<span class="s">"Java"</span>, <span class="s">"C#"</span>, <span class="s">"C"</span>,
+    <span class="s">"PHP"</span>, <span class="s">"HTML/CSS"</span>, <span class="s">"UI/UX"</span>],
+  languages: [<span class="s">"MG"</span>, <span class="s">"FR"</span>, <span class="s">"EN"</span>],
+  learning: <span class="k">true</span>
+};</pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="apropos">
+  <div class="container about-grid">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="about.eyebrow">About me</span>
+      <h2 data-i18n="about.title"></h2>
+      <p data-i18n="about.p1"></p>
+      <p data-i18n="about.p2"></p>
+      <a href="#contact" class="btn btn-outline"><span data-i18n="about.btn">Get in touch</span> <svg><use href="#i-user"/></svg></a>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><div class="icon-box"><svg><use href="#i-cap"/></svg></div><div><b>B2</b><span data-i18n="st.degree"></span></div></div>
+      <div class="stat"><div class="icon-box"><svg><use href="#i-code"/></svg></div><div><b>6+</b><span data-i18n="st.skills"></span></div></div>
+      <div class="stat"><div class="icon-box"><svg><use href="#i-layers"/></svg></div><div><b>6</b><span data-i18n="st.projects"></span></div></div>
+      <div class="stat"><div class="icon-box"><svg><use href="#i-globe"/></svg></div><div><b>3</b><span data-i18n="st.langs"></span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="competences">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="sk.eyebrow">My skills</span>
+      <h2 data-i18n="sk.title"></h2><div class="bar"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="reveal"><div class="skill-top"><span class="name"><span class="tag">J</span><span data-i18n="sk.java"></span></span><em data-i18n="lv.int"></em></div><div class="track"><div class="fill" data-w="70"></div></div></div>
+      <div class="reveal"><div class="skill-top"><span class="name"><span class="tag">C#</span><span data-i18n="sk.csharp"></span></span><em data-i18n="lv.int"></em></div><div class="track"><div class="fill" data-w="70"></div></div></div>
+      <div class="reveal"><div class="skill-top"><span class="name"><span class="tag">C</span><span data-i18n="sk.c"></span></span><em data-i18n="lv.int"></em></div><div class="track"><div class="fill" data-w="65"></div></div></div>
+      <div class="reveal"><div class="skill-top"><span class="name"><span class="tag">H</span><span data-i18n="sk.html"></span></span><em data-i18n="lv.adv"></em></div><div class="track"><div class="fill" data-w="85"></div></div></div>
+      <div class="reveal"><div class="skill-top"><span class="name"><span class="tag">P</span><span data-i18n="sk.php"></span></span><em data-i18n="lv.int"></em></div><div class="track"><div class="fill" data-w="65"></div></div></div>
+      <div class="reveal"><div class="skill-top"><span class="name"><span class="tag">Ai</span><span data-i18n="sk.gd"></span></span><em data-i18n="lv.int"></em></div><div class="track"><div class="fill" data-w="75"></div></div></div>
+      <div class="reveal"><div class="skill-top"><span class="name"><span class="tag">UX</span><span data-i18n="sk.uiux"></span></span><em data-i18n="lv.int"></em></div><div class="track"><div class="fill" data-w="75"></div></div></div>
+      <div class="reveal"><div class="skill-top"><span class="name"><span class="tag">DB</span><span data-i18n="sk.erd"></span></span><em data-i18n="lv.int"></em></div><div class="track"><div class="fill" data-w="65"></div></div></div>
+      <div class="reveal"><div class="skill-top"><span class="name"><span class="tag">PC</span><span data-i18n="sk.pc"></span></span><em data-i18n="lv.int"></em></div><div class="track"><div class="fill" data-w="70"></div></div></div>
+    </div>
+    <div class="section-head reveal" style="margin-top:72px">
+      <span class="eyebrow" data-i18n="lg.eyebrow">Languages</span>
+      <h2 data-i18n="lg.title"></h2><div class="bar"></div>
+    </div>
+    <div class="langs">
+      <div class="card lang reveal"><h4 data-i18n="lg.mg"></h4><span data-i18n="lg.native"></span><div class="track"><div class="fill" data-w="100"></div></div></div>
+      <div class="card lang reveal"><h4 data-i18n="lg.fr"></h4><span data-i18n="lg.fluent"></span><div class="track"><div class="fill" data-w="85"></div></div></div>
+      <div class="card lang reveal"><h4 data-i18n="lg.en"></h4><span data-i18n="lv.int"></span><div class="track"><div class="fill" data-w="60"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="projets">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="pj.eyebrow">Projects</span>
+      <h2 data-i18n="pj.title"></h2><div class="bar"></div>
+    </div>
+    <div class="filters" role="tablist">
+      <button class="filter active" data-f="all" data-i18n="f.all">All</button>
+      <button class="filter" data-f="web" data-i18n="f.web">Web</button>
+      <button class="filter" data-f="software" data-i18n="f.software">Software</button>
+      <button class="filter" data-f="design" data-i18n="f.design">Design</button>
+    </div>
+    <div class="projects-grid">
+      <article class="card project reveal" data-cat="web">
+        <div class="project-thumb"><span class="project-num">01</span><svg><use href="#i-pizza"/></svg></div>
+        <div class="project-body">
+          <h3 data-i18n="p1.t"></h3>
+          <p data-i18n="p1.d"></p>
+          <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Responsive</span></div>
+          <a class="link" href="https://github.com/judiranaii" target="_blank" rel="noopener"><span data-i18n="link.gh"></span> <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="card project reveal" data-cat="web">
+        <div class="project-thumb"><span class="project-num">02</span><svg><use href="#i-home"/></svg></div>
+        <div class="project-body">
+          <h3 data-i18n="p2.t"></h3>
+          <p data-i18n="p2.d"></p>
+          <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Real estate</span></div>
+          <a class="link" href="https://github.com/judiranaii" target="_blank" rel="noopener"><span data-i18n="link.gh"></span> <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="card project reveal" data-cat="software">
+        <div class="project-thumb"><span class="project-num">03</span><svg><use href="#i-wallet"/></svg></div>
+        <div class="project-body">
+          <h3 data-i18n="p3.t"></h3>
+          <p data-i18n="p3.d"></p>
+          <div class="chips"><span class="chip">C#</span><span class="chip">OOP</span></div>
+          <a class="link" href="https://github.com/judiranaii" target="_blank" rel="noopener"><span data-i18n="link.gh"></span> <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="card project reveal" data-cat="design">
+        <div class="project-thumb"><span class="project-num">04</span><svg><use href="#i-pen"/></svg></div>
+        <div class="project-body">
+          <h3 data-i18n="p4.t"></h3>
+          <p data-i18n="p4.d"></p>
+          <div class="chips"><span class="chip">Illustrator</span><span class="chip">Graphic design</span></div>
+          <a class="link" href="https://github.com/judiranaii" target="_blank" rel="noopener"><span data-i18n="link.gh"></span> <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="card project reveal" data-cat="design">
+        <div class="project-thumb"><span class="project-num">05</span><svg><use href="#i-figma"/></svg></div>
+        <div class="project-body">
+          <h3 data-i18n="p5.t"></h3>
+          <p data-i18n="p5.d"></p>
+          <div class="chips"><span class="chip">Figma</span><span class="chip">UI/UX</span><span class="chip">Prototype</span></div>
+          <a class="link" href="https://www.figma.com/files/team/1650781918885868096/user/1650781917331170526?fuid=1650781917331170526" target="_blank" rel="noopener"><span data-i18n="link.figma"></span> <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="card project reveal" data-cat="web">
+        <div class="project-thumb"><span class="project-num">06</span><svg><use href="#i-sofa"/></svg></div>
+        <div class="project-body">
+          <h3 data-i18n="p6.t"></h3>
+          <p data-i18n="p6.d"></p>
+          <div class="chips"><span class="chip">E-commerce</span><span class="chip">Mockup</span><span class="chip">UI/UX</span></div>
+          <a class="link" href="https://github.com/judiranaii" target="_blank" rel="noopener"><span data-i18n="link.gh"></span> <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="formation">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="ed.eyebrow">Background</span>
+      <h2 data-i18n="ed.title">Education</h2><div class="bar"></div>
+    </div>
+    <div class="edu-grid">
+      <div class="card edu reveal">
+        <div class="meta" data-i18n="ed.date"></div>
+        <h3 data-i18n="ed.degree"></h3>
+        <p>Université Adventiste Zurcher, Sambaina</p>
+        <ul>
+          <li data-i18n="ed.b1"></li><li data-i18n="ed.b2"></li><li data-i18n="ed.b3"></li>
+        </ul>
+      </div>
+      <div class="edu-col">
+        <div class="card edu reveal">
+          <div class="meta" data-i18n="ed.expLabel"></div>
+          <h3 data-i18n="ed.expTitle"></h3>
+          <p data-i18n="ed.expDesc"></p>
+        </div>
+        <div class="card edu reveal">
+          <div class="meta" data-i18n="ed.intLabel"></div>
+          <h3 data-i18n="ed.interests"></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="ct.eyebrow">Let's work together</span>
+      <h2 data-i18n="ct.title"></h2>
+      <p data-i18n="ct.desc"></p>
+      <div class="contact-list">
+        <div class="row">
+          <a href="mailto:judiranaivoson@gmail.com"><span class="icon-box"><svg><use href="#i-mail"/></svg></span>judiranaivoson@gmail.com</a>
+          <button class="copy-btn" id="copyBtn" type="button"><svg><use href="#i-copy"/></svg><span data-i18n="ct.copy">Copy</span></button>
+        </div>
+        <a href="https://wa.me/261387187627" target="_blank" rel="noopener"><span class="icon-box"><svg><use href="#i-phone"/></svg></span>WhatsApp: +261 38 71 872 76</a>
+        <a href="#contact"><span class="icon-box"><svg><use href="#i-pin"/></svg></span><span data-i18n="ct.loc"></span></a>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/judiranaii" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+        <a href="https://www.linkedin.com/in/judi-ranaivoson-3a1293390/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+        <a href="https://www.instagram.com/judiranaii/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a>
+        <a href="https://x.com/JudiRanaiii" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg><use href="#i-x"/></svg></a>
+        <a href="https://www.figma.com/files/team/1650781918885868096/user/1650781917331170526?fuid=1650781917331170526" target="_blank" rel="noopener" aria-label="Figma"><svg><use href="#i-figma"/></svg></a>
+      </div>
+    </div>
+    <form class="card reveal" id="contactForm">
+      <label><span data-i18n="fm.name"></span><input type="text" name="name" data-i18n-ph="fm.nameph" required></label>
+      <label><span data-i18n="fm.email"></span><input type="email" name="email" data-i18n-ph="fm.emailph" required></label>
+      <label><span data-i18n="fm.msg"></span><textarea name="message" data-i18n-ph="fm.msgph" required></textarea></label>
+      <button class="btn btn-primary" type="submit" style="justify-content:center"><span data-i18n="fm.send"></span> <svg><use href="#i-arrow"/></svg></button>
+      <p class="form-note" data-i18n="fm.note"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container foot">
+    <span>© <span id="year">2026</span> Judicaël Ranaivoson. <span data-i18n="ft.rights"></span></span>
+    <span data-i18n="ft.made"></span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top"><svg><use href="#i-up"/></svg></button>
+<script src="script.js"></script>
+</body>
+</html>
